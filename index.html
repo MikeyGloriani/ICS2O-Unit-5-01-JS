@@ -57,20 +57,30 @@
       </header>
       <main class="mdl-layout__content">
         <p></p>
-        <img src="./images/notebook-animation.svg" alt="Computer" width="25%" height="25%">
+        <img
+          src="./images/notebook-animation.svg"
+          alt="Computer"
+          width="25%"
+          height="25%"
+        />
         <p></p>
         <p>I am thinking of a number between 1-6. What is it?</p>
-        <div id="slider-value">
-          ?
-        </div>  
+        <div id="slider-value">?</div>
         <!-- Slider with Starting Value -->
         <!-- Note: I added and ID to this component, so I could reference it in code -->
         <!-- Note: I also placed it inside a "label" for accessability -->
         <label>
           Slider's Value
-          <input id = "slider" class="mdl-slider mdl-js-slider" type="range"
-          min="1" max="6" value="3" tabindex="0"
-          onchange = "updateSliderValue(this.value)">
+          <input
+            id="slider"
+            class="mdl-slider mdl-js-slider"
+            type="range"
+            min="1"
+            max="6"
+            value="3"
+            tabindex="0"
+            onchange="updateSliderValue(this.value)"
+          />
         </label>
         <!-- Raised button with ripple -->
         <button
