@@ -30,6 +30,6 @@ if (valueFromSlider == randomNumber) {
 }
 
 // if the guess is incorrect
-if (valueFromSlider == randomNumber) {
+if (valueFromSlider != randomNumber) {
   document.getElementById("answer").innerHTML = "Wrong, try again"
 }
