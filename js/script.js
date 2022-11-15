@@ -14,7 +14,7 @@ if (navigator.serviceWorker) {
 }
 
 // returns a random integer from 1 to 6
-const randomNumber = Math.floor(Math.random() * 6) + 1
+const randomNumber = Math.floor(Math.random() * 6) + 1;
 
 /**
  * This function updates the slider value.
@@ -31,5 +31,5 @@ if (valueFromSlider == randomNumber) {
 
 // if the guess is incorrect
 if (valueFromSlider != randomNumber) {
-  document.getElementById("answer").innerHTML = "Wrong, try again"
+  document.getElementById("answer").innerHTML = "Wrong, the number was" + randomNumber + "Try again"
 }
