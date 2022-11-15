@@ -32,5 +32,5 @@ if (valueFromSlider == randomNumber) {
 // process
 if (valueFromSlider != randomNumber) {
   document.getElementById("answer").innerHTML =
-    "That's right, I was thinking of number" + randomNumber
+    "That's wrong, I was thinking of number" + randomNumber
 }
