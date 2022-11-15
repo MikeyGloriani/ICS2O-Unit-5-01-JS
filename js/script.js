@@ -8,12 +8,13 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Unit-5-01-JS/sw.js", {
-    scope: "/ICS2O-Unit-5-01-JS/",
-  })
+    navigator.serviceWorker.register("/ICS2O-Unit-5-01-JS/sw.js", {
+      scope: "/ICS2O-Unit-5-01-JS/",
+    }
+  )
 }
 
-// returns a random integer from 1 to 6
+// returns a random integer from 1 to 6 into variable "randomNumber" 
 const randomNumber = Math.floor(Math.random() * 6) + 1
 
 /**
@@ -24,13 +25,13 @@ function updateSliderValue(valueFromSlider) {
 }
 
 // process
-if (valueFromSlider == randomNumber) {
-  document.getElementById("answer").innerHTML =
-    "That's right, I was thinking of number" + randomNumber
+    if (valueFromSlider == randomNumber) {
+      document.getElementById("answer").innerHTML =
+        "That's right, I was thinking of number" + randomNumber
 }
 
-// if the guess is incorrect
-if (valueFromSlider != randomNumber) {
-  document.getElementById("answer").innerHTML =
-    "Wrong, the number was" + randomNumber + "Try again"
-}
+// process
+    if (valueFromSlider != randomNumber) {
+      document.getElementById("answer").innerHTML =
+        "That's right, I was thinking of number" + randomNumber
+    }
